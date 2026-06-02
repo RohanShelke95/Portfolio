@@ -735,7 +735,15 @@ body {
 .timeline-college {
   color: var(--text-medium);
   font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.timeline-university {
+  color: var(--primary);
+  font-size: 0.85rem;
   margin-bottom: 15px;
+  font-style: italic;
 }
 
 .timeline-score {

@@ -4,24 +4,25 @@ import { FaGraduationCap, FaSchool, FaBook } from "react-icons/fa";
 const education = [
     {
         icon: <FaGraduationCap />,
-        title: "Bachelor of Computer Science",
-        college: "SPPU University",
+        degree: "Bachelor of Computer Science (BCS)",
+        college: "Balbhim Arts, Science and Commerce College, Beed",
+        university: "Dr. Babasaheb Ambedkar Marathwada University (BAMU)",
         year: "2022 - 2025",
-        score: "CGPA: 8.5"
+        score: "CGPA: 8.04"
     },
     {
         icon: <FaSchool />,
-        title: "Higher Secondary (HSC)",
-        college: "Maharashtra Board",
-        year: "2020 - 2022",
-        score: "75%"
+        degree: "Higher Secondary Certificate (Science)",
+        college: "Bhalchandra Vidyalay, Limbaganesh",
+        year: "2020 - 2021",
+        score: "79.50%"
     },
     {
         icon: <FaBook />,
-        title: "Secondary (SSC)",
-        college: "Maharashtra Board",
-        year: "2019 - 2020",
-        score: "85%"
+        degree: "Secondary School Certificate",
+        college: "Bhalchandra Vidyalay, Limbaganesh",
+        year: "2018 - 2019",
+        score: "70.60%"
     }
 ];
 
@@ -67,8 +68,11 @@ function Education() {
                             </div>
                             <div className="timeline-content">
                                 <span className="timeline-year">{item.year}</span>
-                                <h3 className="timeline-title">{item.title}</h3>
+                                <h3 className="timeline-title">{item.degree}</h3>
                                 <p className="timeline-college">{item.college}</p>
+                                {item.university && (
+                                    <p className="timeline-university">{item.university}</p>
+                                )}
                                 <div className="timeline-score">{item.score}</div>
                             </div>
                         </div>
