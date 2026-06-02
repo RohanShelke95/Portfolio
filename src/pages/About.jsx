@@ -18,7 +18,7 @@ const About = () => {
           <div className="col-lg-5 col-md-6 col-12 d-flex justify-content-center">
             <div className="about-img-wrapper">
               <img
-                src="/Rohan_Shelke_Image.jpeg"
+                src="/Rohan_Passport_image.jpeg"
                 alt="Rohan Shelke"
                 className="about-img"
               />
