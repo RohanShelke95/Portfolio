@@ -6,10 +6,9 @@ const roles = ['Software Developer', 'Front-end Developer', 'Back-end Developer'
 const socialLinks = [
   { icon: 'fa-brands fa-linkedin-in', href: 'https://linkedin.com', label: 'LinkedIn' },
   { icon: 'fa-brands fa-github', href: 'https://github.com', label: 'GitHub' },
-  { icon: 'fa-brands fa-twitter', href: 'https://twitter.com', label: 'Twitter' },
-  { icon: 'fa-brands fa-telegram', href: 'https://telegram.org', label: 'Telegram' },
+  { icon: 'fa-solid fa-code', href: 'https://leetcode.com/u/NscBVkuFrh/', label: 'LeetCode' },
   { icon: 'fa-brands fa-instagram', href: 'https://instagram.com', label: 'Instagram' },
-  { icon: 'fa-solid fa-envelope', href: 'mailto:jigar@email.com', label: 'Email' },
+  { icon: 'fa-solid fa-envelope', href: 'mailto:shelkerohan555@gmail.com', label: 'Email' },
 ];
 
 const Home = () => {
