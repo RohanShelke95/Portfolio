@@ -51,7 +51,7 @@ const About = () => {
 
             {/* Resume Button */}
             <a
-              href="#"
+              href="/Rohan_Shelke_Resume.pdf"
               className="btn about-resume-btn"
               id="resume-btn"
               target="_blank"
