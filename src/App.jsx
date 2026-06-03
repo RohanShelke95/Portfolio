@@ -5,6 +5,7 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Education from './pages/Education';
 import Experience from './pages/Experience';
+import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Skills />
         <Education />
         <Experience />
+        <Projects />
         <Contact />
       </main>
     </>
