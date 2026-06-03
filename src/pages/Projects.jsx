@@ -47,7 +47,7 @@ const projectsData = [
     ],
     tech: ["React.js", "Node.js", "Express.js", "Socket.io", "CSS3", "JavaScript"],
     demoUrl: "#",
-    githubUrl: "https://github.com/shelkerohan555"
+    githubUrl: "https://github.com/RohanShelke95/chatbox-app"
   },
   {
     title: "Book Management System",
@@ -62,8 +62,8 @@ const projectsData = [
     ],
     tech: ["React.js", "Bootstrap", "Node.js", "Express.js", "JSON-Server", "JavaScript"],
     demoUrl: "#",
-    githubUrl: "https://github.com/shelkerohan555"
-  }
+    githubUrl: "https://github.com/RohanShelke95/react-book-management-system"
+  }  
 ];
 
 function Projects() {
