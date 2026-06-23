@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import './index.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -9,9 +10,22 @@ import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('portfolio-theme') || 'light';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('portfolio-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
   return (
     <>
-      <Navbar />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Home />
         <About />

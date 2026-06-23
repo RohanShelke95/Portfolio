@@ -37,7 +37,7 @@ function Experience() {
     }, []);
 
     return (
-        <section id="experience" className="experience py-5" style={{ background: "#f8f9ff" }}>
+        <section id="experience" className="experience py-5">
             <div className="container">
                 <div className="text-center mb-5">
                     <h2 className="section-title">

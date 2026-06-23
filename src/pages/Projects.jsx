@@ -68,6 +68,9 @@ const projectsData = [
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [filter, setFilter] = useState("All");
+
+  const categories = ["All", "Full-Stack", "AI & Web", "Real-Time & CRUD"];
 
   const openModal = (project) => {
     setSelectedProject(project);
@@ -78,6 +81,14 @@ function Projects() {
     setSelectedProject(null);
     document.body.style.overflow = "auto"; // Re-enable body scroll
   };
+
+  const filteredProjects = projectsData.filter((project) => {
+    if (filter === "All") return true;
+    if (filter === "Full-Stack") return project.category.includes("Full-Stack");
+    if (filter === "AI & Web") return project.category.includes("AI") || project.category.includes("Web");
+    if (filter === "Real-Time & CRUD") return project.category.includes("Real-time") || project.category.includes("CRUD");
+    return true;
+  });
 
   return (
     <section id="projects" className="projects-section py-5">
@@ -92,9 +103,22 @@ function Projects() {
           </p>
         </div>
 
+        {/* Category Filters */}
+        <div className="filter-container">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              className={`filter-btn ${filter === cat ? "active" : ""}`}
+              onClick={() => setFilter(cat)}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
         {/* Projects Grid */}
         <div className="row g-4">
-          {projectsData.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <div className="col-lg-6 col-md-6 col-12" key={index}>
               <div className="project-card" onClick={() => openModal(project)}>
                 <div className="project-img-wrapper">
